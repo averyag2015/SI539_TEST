@@ -1,0 +1,218 @@
+
+
+/*********************SKIP TO MAIN***************/
+/* Skip to main*/
+.skip:focus{
+  position:absolute;
+  display:block;
+  top:0px;
+  left:0px;
+  color:black;
+  background-color:red;
+  margin-bottom:10px;
+}
+
+.skip {
+  position:absolute;
+  top: -100px;
+/*  z-index:1;*/
+  color:black;
+  padding:10px;
+  margin:10px;
+}
+
+/*****************^^^^^^^^^^^^  ^^^**************/
+
+
+/************************************************************DESKTOP***************************************************/
+@media screen and (min-width:680px){
+
+/***********GRID FOR BODY DESKTOP*******************/
+.container{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  width:100%;
+  grid-column-gap: 10px;
+  grid-row-gap:10px;
+  justify-items:center;
+  align-content:center;
+}
+
+body{
+  background-color:#305A40;
+}
+
+main{
+  margin-left:100px;
+  margin-right:100px;
+  background-color:#D1CA98;
+}
+
+.header_grid{
+  grid-column: 1/3;
+  grid-row:1;
+  border:3px solid black;
+}
+
+.main_grid{
+  grid-column:1/3;
+  grid-row:2;
+  border:3px solid black;
+  margin-left:100px;
+  margin-right:100px;
+
+}
+.lyric_grid{
+  grid-column:1/2;
+  grid-row:3;
+  border:3px solid black;
+  padding:10px;
+  margin-left:100px;
+}
+.tracks_grid{
+  grid-column:2/3;
+  grid-row:3;
+  border:3px solid black;
+  padding:10px;
+  margin-right:100px;
+}
+.footer_grid{
+  grid-column:1/3;
+  grid-row:5;
+  border:3px solid black;
+}
+
+
+/**********^^^^^^^^^^^^^*******************/
+
+/*primary_canvas*/
+.primary_canvas{
+  margin-left:50px;
+  margin-right:50px;
+  display:inline-block;
+  background-color:#e8e6e1;
+  height:1000px;
+}
+
+/*************NAVIGATION BAR************************/
+
+/*crating nav containers*/
+nav li{
+    display: inline-block;
+    padding:10px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+    margin-top:19px;
+}
+
+/*updating link/nav style*/
+nav li a{
+  background-color:#305A40;
+  font-family: "Trebuchet MS";
+  color:#D1CA98;
+  font-size:17px;
+  padding:10px;
+  margin:10px;
+  font-weight:bold;
+  text-decoration:none; /*remove unlinked from links*/
+}
+
+/*updating nav nave list link to have reaction with hover*/
+nav li a:hover{
+  font-style:italic;
+  font-weight:bold;
+  border: 3px solid #D1CA98;
+}
+nav li a.current_page:hover{
+  font-style:italic;
+  font-weight:bold;
+  border: 3px solid #305A40;
+}
+/*updating the current link to have specific design*/
+a.current_page{
+    background-color:#D1CA98;
+    color:#305A40;
+    font-weight:bold;
+    font-family: "Trebuchet MS";
+}
+}
+/*************^^^^^^^^^^^^^^^^^^^^^^^^^^^^^************************/
+
+/**************H2 2- ALBUM ANNOUCEMENT***************************/
+h2.album_annoucement{
+  text-align:center;
+  font-family:cursive;
+  font-size:2.5em;
+  margin:2%;
+
+
+}
+
+
+/********************GALLARY IMAGES/HONORABLE MENTION PAGE***********************/
+
+/*giving the images a set backound color*/
+.gallery {
+  background-color:#305A40;
+}
+
+/*giving all figures the same box settings*/
+.gallery figure{
+  display:inline-block;
+  width:300px;
+  height:200px;
+  margin-top:50px;
+  margin-bottom:150px;
+}
+
+/*giving images a border and styling*/
+.gallery figure img{
+  border: 5px #CBDED2 solid;
+  width:250px;
+  height:250px;
+  margin:10px;
+  padding:1px;
+}
+
+/*giving images a hover puesdo-class*/
+.gallery figure figcaption a{
+  text-decoration:none;
+  font-family: "Trebuchet MS";
+  color:#D1CA98;
+  text-align:center;
+}
+.gallery figure figcaption a:hover{
+  text-decoration:none;
+  font-style:italic;
+  font-family: "Trebuchet MS";
+  color:#D1CA98;
+}
+
+.gallery figure img:hover{
+  border: 7px #D1CA98 solid;
+  opacity:0.7;
+}
+
+#rolling_stones a{
+  text-decoration:none;
+  color:black;
+}
+
+#rolling_stones a:hover{
+  text-decoration:none;
+  color:black;
+  font-style:italic;
+}
+
+.grid_fig{
+  display:grid;
+  width:2000px;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows:repeat(2, 1fr);
+  grid-column-gap:1px;
+  grid-row-gap:1px;
+  justify-items:center;
+}
+
+/********************^^^^^^^^^^^^^^^^***********************/

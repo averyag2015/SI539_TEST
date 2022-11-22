@@ -1,0 +1,81 @@
+
+
+/*********************SKIP TO MAIN***************/
+/* Skip to main*/
+.skip:focus{
+  position:absolute;
+  display:block;
+  top:0px;
+  left:0px;
+  color:black;
+  background-color:red;
+  margin-bottom:10px;
+}
+
+.skip {
+  position:absolute;
+  top: -100px;
+/*  z-index:1;*/
+  color:black;
+  padding:10px;
+  margin:10px;
+}
+
+/*****************^^^^^^^^^^^^  ^^^**************/
+/***********************************************************MOBILE*****************************************************/
+
+.container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:auto;
+  grid-row-gap:1em;
+  background-color:lightblue;
+
+}
+/*************Styling Navigation***********************/
+.header_grid{
+  background-color:yellow;
+  width:100%;
+  grid-column:1/3;
+  grid-row:1;
+}
+
+nav li{
+    padding:1%;
+    margin:1%;
+    width:100%;
+    text-align:left;
+    display:inline;
+
+}
+/*updating link/nav style*/
+nav li a{
+  background-color:#305A40;
+  font-family: "Trebuchet MS";
+  color:#D1CA98;
+  font-size:80%;
+  padding:1vh;
+  font-weight:bold;
+  text-decoration:none; /*remove unlinked from links*/
+}
+
+/*updating nav nave list link to have reaction with hover*/
+nav li a:hover{
+  font-style:italic;
+  font-weight:bold;
+}
+nav li a.current_page:hover{
+  font-style:italic;
+  text-decoration:underline;
+  font-weight:bold;
+}
+  a.current_page{
+      text-decoration:underline;
+      font-weight:bold;
+      font-family: "Trebuchet MS";
+}
+
+/****************GRID FOR BODY MOBILE******************/
+
+
+/*************************************************^^^^^^^^^^^^^^^^^^^^^^^^^^^^***************************************/
